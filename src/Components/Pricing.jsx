@@ -1,9 +1,9 @@
 
 const Pricing = () => {
   return (
-    <div className='my-20'>
-      <h3 className='uppercase text-center text-6xl pt-10 pb-10 font-bold text-green-500'>Join <span className='text-white'>Our Membership.</span></h3>
-      <div className='w-full my-10 flex justify-center gap-20'>
+    <div className='md:my-20 mt-10 md:mt-0'>
+      <h3 className='uppercase pl-5 md:pl-0 md:text-center text-2xl md:text-6xl md:py-10 font-bold text-green-500'>Join <span className='text-white'>Our Membership.</span></h3>
+      <div className='w-full my-10 flex justify-center items-center flex-col md:flex-row gap-10 md:gap-20'>
         <div className='h-96 w-80 rounded-2xl bg-neutral-900 p-10'>
           <div className='border-b border-neutral-600 pb-3'>
             <span className='text-md text-green-500'>Weekly Plan</span>
