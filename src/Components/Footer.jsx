@@ -11,7 +11,7 @@ const Footer = () => {
       </div>
       <div className='text-2xl flex flex-col md:flex-row md:justify-between justify-center text-white/90 font-semibold  my-5 mx-5 md:mx-32'>
         <h3>+484537844289</h3>
-        <h3>quzenit@gmail.com</h3>
+        <h3>contact@flexflow.com</h3>
         <h3>Toronto City in Canada.</h3>
       </div>
       <div className='flex flex-col md:flex-row justify-center md:justify-between items-center px-5 md:px-10 pb-5'>

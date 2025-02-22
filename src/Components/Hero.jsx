@@ -8,7 +8,7 @@ const Hero = () => {
             <div className='relative w-full'>
                 <h1 className='uppercase scale-y-150 md:text-[200px] text-[75px] mt-20 md:-mt-5  font-extrabold text-center text-neutral-300'>FlexFlow</h1>
             </div>
-            <div className='h-full w-full absolute z-40 flex justify-center top-24 '>
+            <div className='h-full w-full absolute z-20 flex justify-center top-24 '>
                 <div className='absolute flex flex-col gap-5 md:left-32 left-5 bottom-0 md:bottom-40'>
                     <p className='md:text-sm text-lg font-bold text-neutral-500 '>More Then 500 Fitness Group <br /> Classes Per Month, Find Now Friends <br /> Who Will Motivate Your Fitness Goals. </p>
                     <button className='flex justify-start'>
@@ -25,7 +25,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <img className=' h-[400px] md:h-[500px] w-[520px] md:mt-12 ' src={heroImg} alt="image" />
+                <img className= 'h-[400px] md:h-[500px] w-[520px] md:mt-12 ' src={heroImg} alt="image" />
                 <div className='hidden md:block absolute right-32 bottom-40 rounded-2xl h-52 w-60 border-2 bg-white hover:scale-105 ease-in-out duration-300'>
                     <div className='h-32 overflow-hidden object-cover rounded-2xl m-1 w-[97%]'>
                         <img src="https://i0.wp.com/www.muscleandfitness.com/wp-content/uploads/2016/09/Bodybuilder-Working-Out-His-Upper-Body-With-Cable-Crossover-Exercise.jpg?quality=86&strip=all" alt="" />
@@ -39,7 +39,7 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-        <div className='absolute z-50 w-full flex justify-center -mt-[480px] md:-mt-14'>
+        <div className='absolute z-30 w-full flex justify-center -mt-[480px] md:-mt-14'>
             <div className='h-full w-[85%] py-8 md:py-5 rounded-xl bg-white flex justify-evenly items-center'>
                 <img className='h-5 md:h-12' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zara_Logo.svg/2560px-Zara_Logo.svg.png" alt="zara logo" />
                 <img className='h-5 md:h-12' src="https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo.png" alt="nike logo" />

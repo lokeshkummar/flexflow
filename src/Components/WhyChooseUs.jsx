@@ -2,10 +2,10 @@ import { TiTick } from "react-icons/ti";
 
 const WhyChooseUs = () => {
   return (
-    <div className='md:my-20 md:px-32'>
+    <div className='md:my-20 -mb-10 md:px-32'>
       <h2 className='text-2xl pl-5 md:pl-0 md:text-6xl font-bold text-white uppercase' >Why <span className='text-green-500'>should</span> people choose <br /> flexflow services </h2>
       <div className='h-[450px] w-full flex flex-col md:flex-row'>
-        <div className='md:w-[60%] w-full pt-14 flex flex-col gap-5 md:pl-0 pl-5'>
+        <div className='md:w-[60%] w-full pt-8 sm:pt-14 flex flex-col gap-5 md:pl-0 pl-5'>
           <div>
             <div className='flex items-center gap-3'>
               <span className='bg-green-500 text-white h-5 w-5 rounded-full'><TiTick size={20} /></span>
