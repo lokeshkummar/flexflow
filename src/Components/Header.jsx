@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CgMenuRightAlt } from "react-icons/cg";
-import { motion } from "motion/react"
+import { motion, AnimatePresence } from "motion/react"
 import { HiOutlineXCircle } from "react-icons/hi2";
 
 const Header = () => {
@@ -67,19 +67,26 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            {
-                isOpen && (
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} className='fixed right-0 top-0 z-50 pb-5 h-full w-full bg-[#b9b9b924] backdrop-blur-xl text-green-500 flex flex-col '>
-                        <HiOutlineXCircle className='absolute right-5 mt-5 text-6xl active:scale-75 ease-linear duration-200' onClick={togglePopover} />
-                        <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} className='h-full w-full flex flex-col gap-7 justify-center items-center text-2xl font-bold'>
-                            <a className="text-green-500" href="">Home</a>
-                            <a className="text-green-500" href="">Programme</a>
-                            <a className="text-green-500" href="">Blog</a>
-                            <a className="text-green-500" href="">Contact</a>
+            <AnimatePresence>
+                {
+                    isOpen && (
+                        <motion.div
+                            initial={{ x: "100%" }}
+                            animate={{ x: 0 }}
+                            exit={{ x: "100%" }}
+                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                            className='fixed right-0 top-0 z-50 pb-5 h-full w-full bg-[#b9b9b924] backdrop-blur-xl text-green-500 flex flex-col '>
+                            <HiOutlineXCircle className='absolute right-5 mt-5 text-6xl active:scale-75 ease-linear duration-200' onClick={togglePopover} />
+                            <div className='h-full uppercase w-full flex flex-col gap-7 justify-center items-center text-2xl font-bold'>
+                                <a className="text-green-500" href="">Home</a>
+                                <a className="text-green-500" href="">Programme</a>
+                                <a className="text-green-500" href="">Blog</a>
+                                <a className="text-green-500" href="">Contact</a>
+                            </div>
                         </motion.div>
-                    </motion.div>
-                )
-            }
+                    )
+                }
+            </AnimatePresence>
         </header>
 
     )
