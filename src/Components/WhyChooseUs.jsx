@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
 
         </div>
         <div className='hidden md:block md:w-[40%] overflow-hidden object-center '>
-          <img className="scale-110" src="https://images.pexels.com/photos/29825224/pexels-photo-29825224/free-photo-of-muscular-man-lifting-weights-at-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
+          <img className="scale-110" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*dhKlXej4pe0mBK4Y-3U3uQ.jpeg" alt="" />
         </div>
       </div>
     </div>

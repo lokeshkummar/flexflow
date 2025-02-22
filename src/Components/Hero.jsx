@@ -6,10 +6,10 @@ const Hero = () => {
         <>
         <div className='h-screen w-full text-white'>
             <div className='relative w-full'>
-                <h1 className='uppercase md:text-[200px] text-[75px] mt-20 md:mt-0  font-extrabold text-center text-neutral-300'>FlexFlow</h1>
+                <h1 className='uppercase scale-y-150 md:text-[200px] text-[75px] mt-20 md:-mt-5  font-extrabold text-center text-neutral-300'>FlexFlow</h1>
             </div>
             <div className='h-full w-full absolute z-40 flex justify-center top-24 '>
-                <div className='absolute flex flex-col gap-5 md:left-32 left-5 bottom-0 md:bottom-44'>
+                <div className='absolute flex flex-col gap-5 md:left-32 left-5 bottom-0 md:bottom-40'>
                     <p className='md:text-sm text-lg font-bold text-neutral-500 '>More Then 500 Fitness Group <br /> Classes Per Month, Find Now Friends <br /> Who Will Motivate Your Fitness Goals. </p>
                     <button className='flex justify-start'>
                         <a href='/' className=' uppercase px-8 font-bold text-md rounded-full py-3 bg-linear-to-r from-green-500 via-green-700 to-green-500 hover:scale-105 ease-linear duration-100 cursor-pointer ' >Free Pass</a>
@@ -26,7 +26,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <img className=' h-[400px] md:h-[500px] w-[520px] md:mt-12 ' src={heroImg} alt="image" />
-                <div className='hidden md:block absolute right-32 bottom-44 rounded-2xl h-52 w-60 border-2 bg-white'>
+                <div className='hidden md:block absolute right-32 bottom-40 rounded-2xl h-52 w-60 border-2 bg-white hover:scale-110 ease-in-out duration-300'>
                     <div className='h-32 overflow-hidden object-cover rounded-2xl m-1 w-[97%]'>
                         <img src="https://i0.wp.com/www.muscleandfitness.com/wp-content/uploads/2016/09/Bodybuilder-Working-Out-His-Upper-Body-With-Cable-Crossover-Exercise.jpg?quality=86&strip=all" alt="" />
                         <span className='absolute right-2 bottom-20 px-4 py-1.5 bg-white text-black font-bold uppercase text-xs rounded-full' >Reminder</span>
