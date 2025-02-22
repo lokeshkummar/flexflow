@@ -26,7 +26,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <img className=' h-[400px] md:h-[500px] w-[520px] md:mt-12 ' src={heroImg} alt="image" />
-                <div className='hidden md:block absolute right-32 bottom-40 rounded-2xl h-52 w-60 border-2 bg-white hover:scale-110 ease-in-out duration-300'>
+                <div className='hidden md:block absolute right-32 bottom-40 rounded-2xl h-52 w-60 border-2 bg-white hover:scale-105 ease-in-out duration-300'>
                     <div className='h-32 overflow-hidden object-cover rounded-2xl m-1 w-[97%]'>
                         <img src="https://i0.wp.com/www.muscleandfitness.com/wp-content/uploads/2016/09/Bodybuilder-Working-Out-His-Upper-Body-With-Cable-Crossover-Exercise.jpg?quality=86&strip=all" alt="" />
                         <span className='absolute right-2 bottom-20 px-4 py-1.5 bg-white text-black font-bold uppercase text-xs rounded-full' >Reminder</span>

@@ -19,9 +19,9 @@ const OurPrograms = () => {
             <div className="h-full w-[15%] flex items-center justify-center bg-white text-black rounded-xl ">
               <h2 className="-rotate-90 text-3xl uppercase whitespace-nowrap flex justify-center gap-3 items-center font-semibold">Mind and Body <FaArrowRightLong className="text-3xl" /></h2>
             </div>
-            <div className="h-full w-[85% flex items-center justify-between overflow-hidden gap-1">
-              <img className="h-full w-[52] rounded-md pl-1" src="https://images.pexels.com/photos/14898427/pexels-photo-14898427.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="" />
-              <img className="h-full w-[52] rounded-md" src="https://images.pexels.com/photos/18502146/pexels-photo-18502146/free-photo-of-man-in-tank-top-holding-weight-at-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
+            <div className="h-full w-[85%] flex items-center justify-between overflow-hidden gap-1 object-center">
+              <img className="h-full w-1/2 pl-1" src="https://images.pexels.com/photos/14898427/pexels-photo-14898427.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="" />
+              <img className="h-full w-1/2" src="https://images.pexels.com/photos/18502146/pexels-photo-18502146/free-photo-of-man-in-tank-top-holding-weight-at-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
             </div>
 
           </div>
