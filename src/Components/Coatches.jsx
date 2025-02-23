@@ -1,3 +1,5 @@
+import TiltedCard from "./TitledCard";
+
 const Coatches = () => {
   return (
     <div className='h-auto mx-5 sm:mx-10 md:mx-20 lg:mx-32'>
@@ -8,9 +10,44 @@ const Coatches = () => {
       <div className="flex w-full items-center justify-center">
         <div className="grid w-full gap-5 p-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 grid-rows-auto rounded-lg shadow-md">
           {/* Image and Text Blocks */}
-          <div className="bg-gray-200 rounded-2xl shadow-md flex items-center justify-center overflow-hidden h-80 hover:scale-105 ease-in-out duration-300">
-            <img src="https://images.pexels.com/photos/13197535/pexels-photo-13197535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Coach 1" className="w-full h-full object-cover" />
-          </div>
+
+          <TiltedCard
+
+            imageSrc="https://images.pexels.com/photos/13197535/pexels-photo-13197535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Coach 4" className="w-full h-full object-cover"
+
+            altText="coatch 1"
+
+            captionText="Yoga Trainer"
+
+            containerHeight="320px"
+
+            containerWidth="320px"
+
+            imageHeight="320px"
+
+            imageWidth="320px"
+
+            rotateAmplitude={12}
+
+            scaleOnHover={1.1}
+
+            showMobileWarning={false}
+
+            showTooltip={true}
+
+            displayOverlayContent={true}
+
+            overlayContent={
+
+              <p className="tilted-card-demo-text">
+
+                More 700 hr
+
+              </p>
+
+            }
+
+          />
 
           <div className="rounded-2xl shadow-md flex flex-col items-center justify-center p-4 h-80 border border-neutral-700 hover:scale-105 ease-in-out duration-300">
             <h3 className='text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-b from-green-400 via-green-500 to-green-700 text-transparent bg-clip-text'>
@@ -26,22 +63,157 @@ const Coatches = () => {
             </button>
           </div>
 
-          <div className="bg-gray-200 rounded-2xl shadow-md flex items-center justify-center overflow-hidden h-80 hover:scale-105 ease-in-out duration-300">
-            <img src="https://images.pexels.com/photos/30672394/pexels-photo-30672394/free-photo-of-man-exercising-with-dumbbells-in-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Coach 2" className="w-full h-full object-cover" />
-          </div>
+          <TiltedCard
 
-          <div className="bg-gray-200 rounded-2xl shadow-md flex items-center justify-center overflow-hidden h-80 hover:scale-105 ease-in-out duration-300">
-            <img src="https://images.pexels.com/photos/5769133/pexels-photo-5769133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Coach 3" className="w-full h-full object-cover" />
-          </div>
+            imageSrc="https://images.pexels.com/photos/30672394/pexels-photo-30672394/free-photo-of-man-exercising-with-dumbbells-in-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Coach 4" className="w-full h-full object-cover"
 
-          <div className="bg-gray-200 rounded-2xl shadow-md flex items-center justify-center overflow-hidden h-80 hover:scale-105 ease-in-out duration-300">
-            <img src="https://images.pexels.com/photos/29780130/pexels-photo-29780130/free-photo-of-man-lifting-barbell-in-gym-for-strength-training.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Coach 4" className="w-full h-full object-cover" />
-          </div>
+            altText="coatch 2"
 
-          <div className="h-80 rounded-2xl shadow-md flex flex-col items-center justify-center overflow-hidden hover:scale-105 ease-in-out duration-300 ">
-            <img src="https://images.pexels.com/photos/4164758/pexels-photo-4164758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Coach 5" className="w-full h-full object-cover" />
-            
-          </div>
+            captionText="Fitness Trainer"
+
+            containerHeight="320px"
+
+            containerWidth="320px"
+
+            imageHeight="320px"
+
+            imageWidth="320px"
+
+            rotateAmplitude={12}
+
+            scaleOnHover={1.1}
+
+            showMobileWarning={false}
+
+            showTooltip={true}
+
+            displayOverlayContent={true}
+
+            overlayContent={
+
+              <p className="tilted-card-demo-text">
+
+                More 100 hr
+
+              </p>
+
+            }
+
+          />
+
+          <TiltedCard
+
+            imageSrc="https://images.pexels.com/photos/5769133/pexels-photo-5769133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Coach 4" className="w-full h-full object-cover"
+
+            altText="coatch 3"
+
+            captionText="Fitness Trainer"
+
+            containerHeight="320px"
+
+            containerWidth="320px"
+
+            imageHeight="320px"
+
+            imageWidth="320px"
+
+            rotateAmplitude={12}
+
+            scaleOnHover={1.1}
+
+            showMobileWarning={false}
+
+            showTooltip={true}
+
+            displayOverlayContent={true}
+
+            overlayContent={
+
+              <p className="tilted-card-demo-text">
+
+                More 1120 hr
+
+              </p>
+
+            }
+
+          />
+
+          <TiltedCard
+
+            imageSrc="https://images.pexels.com/photos/29780130/pexels-photo-29780130/free-photo-of-man-lifting-barbell-in-gym-for-strength-training.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Coach 4" className="w-full h-full object-cover"
+
+            altText="coatch 4"
+
+            captionText="Box Jump Trainer"
+
+            containerHeight="320px"
+
+            containerWidth="320px"
+
+            imageHeight="320px"
+
+            imageWidth="320px"
+
+            rotateAmplitude={12}
+
+            scaleOnHover={1.1}
+
+            showMobileWarning={false}
+
+            showTooltip={true}
+
+            displayOverlayContent={true}
+
+            overlayContent={
+
+              <p className="tilted-card-demo-text">
+
+                More 500 hr
+
+              </p>
+
+            }
+
+          />
+
+          <TiltedCard
+
+            imageSrc="https://images.pexels.com/photos/4164758/pexels-photo-4164758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+
+            altText="coatch 5"
+
+            captionText="Fitness Trainer"
+
+            containerHeight="320px"
+
+            containerWidth="320px"
+
+            imageHeight="320px"
+
+            imageWidth="320px"
+
+            rotateAmplitude={12}
+
+            scaleOnHover={1.1}
+
+            showMobileWarning={false}
+
+            showTooltip={true}
+
+            displayOverlayContent={true}
+
+            overlayContent={
+
+              <p className="tilted-card-demo-text">
+
+                More 800 hr
+
+              </p>
+
+            }
+
+          />
         </div>
       </div>
     </div>
