@@ -1,46 +1,139 @@
+import { useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const OurPrograms = () => {
+  const Images = {
+    boxjumping: {
+      title: "Box Jumping",
+      description:
+        "Box jumping is a powerful plyometric exercise that boosts leg strength, agility, and explosive power. It’s perfect for improving athletic performance and building lower-body endurance.",
+      images: [
+        "https://images.pexels.com/photos/19254710/pexels-photo-19254710/free-photo-of-a-man-exercising-at-the-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/7675414/pexels-photo-7675414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      ],
+    },
+    cardio: {
+      title: "Cardio",
+      description:
+        "Cardio workouts elevate your heart rate, burn fat, and improve stamina. Whether you’re running, cycling, or dancing, cardio gets your blood pumping and boosts overall health.",
+      images: [
+        "https://images.pexels.com/photos/4662354/pexels-photo-4662354.jpeg",
+        "https://images.pexels.com/photos/11175793/pexels-photo-11175793.jpeg",
+      ],
+    },
+    cycling: {
+      title: "Cycling",
+      description:
+        "Indoor or outdoor, cycling is a low-impact way to build strength and endurance. It tones your legs, improves cardiovascular health, and burns calories while being kind on the joints.",
+      images: [
+        "https://images.pexels.com/photos/13799195/pexels-photo-13799195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/31457940/pexels-photo-31457940/free-photo-of-professional-cyclist-competing-in-adelaide-race.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      ],
+    },
+    mindandbody: {
+      title: "Mind and Body",
+      description:
+        "Blend movement and mindfulness with exercises that relax your mind and strengthen your body. Yoga, stretching, and breathing techniques help reduce stress and boost flexibility.",
+      images: [
+        "https://images.pexels.com/photos/6931889/pexels-photo-6931889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/7500028/pexels-photo-7500028.jpeg?auto=compress&cs=tinysrgb&w=600",
+      ],
+    },
+    signatureclass: {
+      title: "Signature Class",
+      description:
+        "Being physically and mentally fit is necessary to live a happy, long life. Exercise is one of the best ways to keep a person healthy. Hence, it is always best to find a workout routine no matter how busy you are.",
+      images: [
+        "https://images.pexels.com/photos/14898427/pexels-photo-14898427.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+        "https://images.pexels.com/photos/18502146/pexels-photo-18502146/free-photo-of-man-in-tank-top-holding-weight-at-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      ],
+    },
+  };
+
+  const [activeKey, setActiveKey] = useState("signatureclass");
+  const current = Images[activeKey];
+
+  const handleTabClick = (key) => {
+    setActiveKey(key);
+  };
+
+  const programKeys = {
+    "Signature class": "signatureclass",
+    Cardio: "cardio",
+    Cycling: "cycling",
+    "Mind And Body": "mindandbody",
+    "Box Jumping": "boxjumping",
+  };
+  
+
   return (
-    <div className='min-h-96 w-full px-5 sm:px-10 md:px-32 -mt-20 mb-10 md:mt-20'>
-      <h2 className='text-center uppercase text-[28px] sm:text-3xl md:text-5xl font-bold text-white'>Our <span className='text-green-500'>special</span> program.</h2>
+    <div className='min-h-96 w-full px-5 sm:px-10 md:px-32 mb-10 md:mt-24'>
+      <h2 className='text-center uppercase text-[28px] sm:text-3xl md:text-5xl font-bold text-white'>
+        Our <span className='text-green-500'>special</span> program.
+      </h2>
 
       <ul className='flex flex-wrap justify-center gap-5 sm:gap-10 md:gap-24 items-center text-neutral-500 py-5 text-xs sm:text-sm font-bold uppercase overflow-auto'>
-        <li className='hover:text-neutral-400 cursor-pointer flex flex-col justify-between'>All
-          <span className='h-0.5 mt-1 w-6'></span>
-        </li>
-        <li className='hover:text-neutral-400 cursor-pointer'>Signature class</li>
-        <li className='hover:text-neutral-400 cursor-pointer'>Cardio</li>
-        <li className='hover:text-neutral-400 cursor-pointer'>Cycling</li>
-        <li className='hover:text-neutral-400 cursor-pointer'>Mind And Body</li>
+        {Object.keys(programKeys).map((key) => (
+          <li
+            key={key}
+            onClick={() => handleTabClick(programKeys[key])}
+            className={`cursor-pointer flex flex-col justify-between hover:text-white ${
+              activeKey === programKeys[key] ? "text-white" : ""
+            }`}
+          >
+            {key}
+            <span
+              className={`h-0.5 mt-1 w-6 mx-auto ${
+                activeKey === programKeys[key] ? "bg-green-500" : ""
+              }`}
+            ></span>
+          </li>
+        ))}
       </ul>
 
       <div className='h-auto w-full'>
         <div className='flex flex-col md:flex-row gap-5 mt-5'>
           {/* Left Section */}
           <div className='w-full md:w-1/2 flex flex-col sm:flex-row'>
-            <div className='h-16 sm:h-full w-full sm:w-[15%] flex items-center justify-center bg-white text-black rounded-xl'>
-              <h2 className="md:-rotate-90 text-xl md:text-3xl uppercase md:whitespace-nowrap flex justify-center gap-3 items-center font-semibold">Mind and Body <FaArrowRightLong className="text-3xl" /></h2>            </div>
-            <div className='w-full sm:w-[85%] mt-1 md:mt-0 flex items-center justify-between gap-1'>
-              <img className='h-64 rounded-xl sm:rounded-none sm:h-full w-1/2 pl-1' src='https://images.pexels.com/photos/14898427/pexels-photo-14898427.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load' alt='' />
-              <img className='h-64 rounded-xl sm:rounded-none sm:h-full w-1/2' src='https://images.pexels.com/photos/18502146/pexels-photo-18502146/free-photo-of-man-in-tank-top-holding-weight-at-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='' />
+            <div className='h-16 sm:h-full w-full sm:w-[15%] flex items-center justify-center mb-0.5 sm:mr-0.5 bg-white text-black rounded-xl'>
+              <h2 className='md:-rotate-90 text-xl md:text-3xl uppercase md:whitespace-nowrap flex justify-center gap-3 items-center font-semibold'>
+                {current.title} <FaArrowRightLong className='text-3xl' />
+              </h2>
+            </div>
+            <div className='w-full sm:w-[85%] mt-1 md:mt-0 flex items-center justify-between gap-0.5'>
+              {current.images.slice(0, 2).map((src, i) => (
+                <img
+                  key={i}
+                  className='h-64 rounded-xl sm:h-full w-1/2 pl-1 object-cover'
+                  src={src}
+                  alt={`${current.title}-${i}`}
+                />
+              ))}
             </div>
           </div>
 
           {/* Right Section */}
           <div className='w-full md:w-1/2 text-white flex flex-col pt-5 sm:pl-5 gap-5'>
-            <h2 className='text-2xl sm:text-3xl uppercase text-white font-bold'>Signature Class</h2>
-            <p className='text-md text-neutral-400 font-semibold'>Being physically and mentally fit is necessary to live a happy, long life. Exercise is one of the best ways to keep a person healthy. Hence, it is always best to find a workout routine no matter how busy you are.</p>
+            <h2 className='text-2xl sm:text-3xl uppercase font-bold'>
+              {current.title}
+            </h2>
+            <p className='text-md text-neutral-400 font-semibold'>
+              {current.description}
+            </p>
 
             <div className='flex gap-3 sm:gap-5'>
-              {[
-                "https://images.pexels.com/photos/14898427/pexels-photo-14898427.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
-                "https://images.pexels.com/photos/18502146/pexels-photo-18502146/free-photo-of-man-in-tank-top-holding-weight-at-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-                "https://images.pexels.com/photos/14762173/pexels-photo-14762173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"].map((src, index) => (
-                  <div key={index} className='h-14 w-14 rounded-full border-2 border-white overflow-hidden cursor-pointer hover:scale-110 transition-transform duration-300'>
-                    <img className='h-full w-full object-center' src={src} alt='' />
-                  </div>
-                ))}
+              {current.images.map((src, index) => (
+                <div
+                  key={index}
+                  className='h-14 w-14 rounded-full border-2 border-white overflow-hidden cursor-pointer hover:scale-110 transition-transform duration-300'
+                >
+                  <img
+                    className='h-full w-full object-cover'
+                    src={src}
+                    alt={`${current.title}-thumb-${index}`}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>

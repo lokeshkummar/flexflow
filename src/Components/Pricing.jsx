@@ -48,15 +48,15 @@ const Pricing = () => {
         <div className='h-96 w-80 rounded-2xl bg-neutral-900 p-10 hover:scale-110 ease-in-out duration-300'>
           <div className='border-b border-neutral-600 pb-3'>
             <span className='text-md text-green-500'>Yearly Plan</span>
-            <h2 className='text-white text-5xl font-bold'>$120</h2>
+            <h2 className='text-white text-5xl font-bold'>$320</h2>
           </div>
           <div>
             <ul className='text-white pt-5 leading-relaxed'>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Free Consulting</li>
-              <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> 3 Hour Personal Training</li>
-              <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Exercise Program</li>
+              <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> 15 Hour Personal Training</li>
+              <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Personalised Exercise Program</li>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Normal Workout</li>
-              <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Highest Level Workout</li>
+              <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Pro Level Workout</li>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Extra Care of Health</li>
 
             </ul>
