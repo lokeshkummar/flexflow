@@ -44,9 +44,9 @@ const Header = () => {
                         </nav>
                     </div>
 
-                    <div className="flex gap-5 items-center sm:pr-5">
+                    <div className="flex gap-1 items-center sm:pr-5">
                         <div className="">
-                            <ul className='flex gap-2 items-center'>
+                            <ul className='flex gap-1 items-center'>
                                 <SignedOut>
                                     <Link to="/sign-in" className="px-3 hover:scale-105 ease-in-out duration-200 py-1.5 rounded-md bg-linear-to-r from-green-500 via-green-500 to-green-700 text-sm font-bold text-white">Sign In</Link>
                                     <Link to="/sign-up" className="px-3 hover:scale-105 ease-in-out duration-200 py-1.5 rounded-md bg-neutral-700 font-bold text-sm text-green-500">Sign Up</Link>
