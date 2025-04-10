@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 const OurPrograms = () => {
   const Images = {
@@ -82,13 +81,13 @@ const OurPrograms = () => {
           <li
             key={key}
             onClick={() => handleTabClick(programKeys[key])}
-            className={`cursor-pointer flex flex-col justify-between hover:text-white ${
-              activeKey === programKeys[key] ? "text-white" : ""
+            className={`cursor-pointer flex flex-col justify-between hover:text-green-500 ${
+              activeKey === programKeys[key] ? "text-green-500" : "text-white"
             }`}
           >
             {key}
             <span
-              className={`h-0.5 mt-1 w-6 mx-auto ${
+              className={`h-0.5 mt-1 w-14 mx-auto ${
                 activeKey === programKeys[key] ? "bg-green-500" : ""
               }`}
             ></span>
@@ -101,8 +100,8 @@ const OurPrograms = () => {
           {/* Left Section */}
           <div className='w-full md:w-1/2 flex flex-col sm:flex-row'>
             <div className='h-16 sm:h-full w-full sm:w-[15%] flex items-center justify-center mb-0.5 sm:mr-0.5 bg-white text-black rounded-xl'>
-              <h2 className='md:-rotate-90 text-xl md:text-3xl uppercase md:whitespace-nowrap flex justify-center gap-3 items-center font-semibold'>
-                {current.title} <FaArrowRightLong className='text-3xl' />
+              <h2 className='md:-rotate-90 text-xl md:text-3xl uppercase md:whitespace-nowrap flex justify-center gap-3 items-center font-mono font-bold'>
+                {current.title}
               </h2>
             </div>
             <div className='w-full sm:w-[85%] mt-1 md:mt-0 flex items-center justify-between gap-0.5'>
@@ -126,7 +125,7 @@ const OurPrograms = () => {
             <h2 className='text-2xl sm:text-3xl uppercase font-bold'>
               {current.title}
             </h2>
-            <p className='text-md text-neutral-400 font-semibold'>
+            <p className='text-md text-neutral-400 font-semibold font-mono '>
               {current.description}
             </p>
 

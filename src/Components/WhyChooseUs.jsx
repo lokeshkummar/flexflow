@@ -1,4 +1,5 @@
 import { TiTick } from "react-icons/ti";
+import { Link } from "react-router";
 
 const WhyChooseUs = () => {
   return (
@@ -11,7 +12,7 @@ const WhyChooseUs = () => {
               <span className='bg-green-500 text-white h-5 w-5 rounded-full'><TiTick size={20} /></span>
               <h2 className='text-white uppercase text-xl font-bold'>Personal Training</h2>
             </div>
-            <p className='pl-8 pt-2 text-neutral-500 font-semibold text-sm '>Being physically and mentally fit is necessary to live <br /> happy, long life. Exercise is one of the best.</p>
+            <p className='pl-8 pt-2 text-neutral-500 font-semibold font-mono text-sm '>Being physically and mentally fit is necessary to live <br /> happy, long life. Exercise is one of the best.</p>
 
           </div>
 
@@ -21,7 +22,7 @@ const WhyChooseUs = () => {
               <span className='bg-green-500 text-white h-5 w-5 rounded-full'><TiTick size={20} /></span>
               <h2 className='text-white uppercase text-xl font-bold'>Expert Trainer</h2>
             </div>
-            <p className='pl-8 pt-2 text-neutral-500 font-semibold text-sm '>Being physically and mentally fit is necessary to live <br /> happy, long life. Exercise is one of the best.</p>
+            <p className='pl-8 pt-2 text-neutral-500 font-semibold font-mono text-sm '>Being physically and mentally fit is necessary to live <br /> happy, long life. Exercise is one of the best.</p>
           </div>
 
 
@@ -30,11 +31,11 @@ const WhyChooseUs = () => {
               <span className='bg-green-500 text-white h-5 w-5 rounded-full'><TiTick size={20} /></span>
               <h2 className='text-white uppercase text-xl font-bold'>Flexible Timing</h2>
             </div>
-            <p className='pl-8 pt-2 text-neutral-500 font-semibold text-sm '>Being physically and mentally fit is necessary to live <br /> happy, long life. Exercise is one of the best.</p>
+            <p className='pl-8 pt-2 text-neutral-500 font-semibold font-mono text-sm '>Being physically and mentally fit is necessary to live <br /> happy, long life. Exercise is one of the best.</p>
           </div>
 
           <button className='flex justify-start md:pl-0 pl-5'>
-            <a href='/' className=' md:mt-5 uppercase px-8 font-bold text-md rounded-full py-3 bg-linear-to-r from-green-500 via-green-700 to-green-500 hover:scale-105 ease-linear duration-100 cursor-pointer text-white ' >Join Today</a>
+            <Link to="/contact" className=' md:mt-5 uppercase px-8 font-bold text-md rounded-full py-3 bg-linear-to-r from-green-500 via-green-700 to-green-500 hover:scale-105 ease-linear duration-100 cursor-pointer text-white ' >Join Today</Link>
           </button>
 
         </div>

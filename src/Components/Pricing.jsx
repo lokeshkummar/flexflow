@@ -10,7 +10,7 @@ const Pricing = () => {
             <h2 className='text-white text-5xl font-bold'>$80</h2>
           </div>
           <div>
-            <ul className='text-white pt-5 leading-relaxed'>
+            <ul className='text-white font-mono pt-5 leading-relaxed'>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Free Consulting</li>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> 3 Hour Personal Training</li>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Exercise Program</li>
@@ -19,7 +19,7 @@ const Pricing = () => {
             </ul>
           </div>
           <button className='mt-20 hover:scale-105 ease-in-out duration-300'>
-            <a href="" className='px-6 py-3 rounded-full bg-green-500 text-white font-bold uppercase '>Join Now</a>
+            <a href="tel:+917668589458" className='px-6 py-3 rounded-full bg-green-500 text-white font-bold uppercase '>Join Now</a>
           </button>
 
         </div>
@@ -30,7 +30,7 @@ const Pricing = () => {
             <h2 className='text-white text-5xl font-bold'>$120</h2>
           </div>
           <div>
-            <ul className='text-white pt-5 leading-relaxed'>
+            <ul className='text-white font-mono pt-5 leading-relaxed'>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-white rounded-full'></span> Free Consulting</li>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-white rounded-full'></span> 3 Hour Personal Training</li>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-white rounded-full'></span> Exercise Program</li>
@@ -41,7 +41,7 @@ const Pricing = () => {
             </ul>
           </div>
           <button className='mt-7 hover:scale-105 ease-in-out duration-300'>
-            <a href="" className='px-6 py-3 rounded-full bg-white text-green-500 font-bold uppercase'>Join Now</a>
+            <a href="tel:+917668589458" className='px-6 py-3 rounded-full bg-white text-green-500 font-bold uppercase'>Join Now</a>
           </button>
         </div>
 
@@ -51,18 +51,18 @@ const Pricing = () => {
             <h2 className='text-white text-5xl font-bold'>$320</h2>
           </div>
           <div>
-            <ul className='text-white pt-5 leading-relaxed'>
+            <ul className='text-white font-mono pt-5 leading-relaxed'>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Free Consulting</li>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> 15 Hour Personal Training</li>
-              <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Personalised Exercise Program</li>
-              <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Normal Workout</li>
+              <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Personalised Program</li>
+              <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Normal Level Workout</li>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Pro Level Workout</li>
               <li className='flex gap-2 items-center'> <span className='h-2 w-2 bg-green-500 rounded-full'></span> Extra Care of Health</li>
 
             </ul>
           </div>
           <button className='mt-7 hover:scale-105 ease-in-out duration-300'>
-            <a href="" className='px-6 py-3 rounded-full bg-green-500 text-white font-bold uppercase'>Join Now</a>
+            <a href="tel:+917668589458" className='px-6 py-3 rounded-full bg-green-500 text-white font-bold uppercase'>Join Now</a>
           </button>
         </div>
       </div>

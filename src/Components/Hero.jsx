@@ -1,6 +1,7 @@
 import { MdArrowOutward } from "react-icons/md";
 import heroImg from "../assets/hero_img.png"
 import CountUp from "./CountUp";
+import { Link } from "react-router";
 
 const Hero = () => {
     return (
@@ -11,9 +12,9 @@ const Hero = () => {
                 </div>
                 <div className='h-full w-full absolute z-20 flex justify-center top-24 '>
                     <div className='absolute flex flex-col gap-5 md:left-32 left-5 bottom-10 my-10 md:bottom-32'>
-                        <p className='md:text-sm text-lg font-bold text-neutral-500 '>More Then 500 Fitness Group <br /> Classes Per Month, Find Now Friends <br /> Who Will Motivate Your Fitness Goals. </p>
+                        <p className='md:text-sm text-lg font-bold font-mono text-neutral-500 '>More Then 500 Fitness Group <br /> Classes Per Month, Find Now Friends <br /> Who Will Motivate Your Fitness Goals. </p>
                         <button className='flex justify-start'>
-                            <a href='/' className=' uppercase px-8 font-bold text-md rounded-full py-3 bg-linear-to-r from-green-500 via-green-700 to-green-500 hover:scale-105 ease-linear duration-100 cursor-pointer ' >Free Pass</a>
+                            <Link to="/contact" className=' uppercase px-8 font-bold text-md rounded-full py-3 bg-linear-to-r from-green-500 via-green-700 to-green-500 hover:scale-105 ease-linear duration-100 cursor-pointer ' >Free Pass</Link>
                         </button>
                         <div className='flex gap-10'>
                             <div>

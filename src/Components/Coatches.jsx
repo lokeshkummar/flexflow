@@ -1,4 +1,5 @@
 import TiltedCard from "./TitledCard";
+import { Link } from "react-router";
 
 const Coatches = () => {
   return (
@@ -53,13 +54,13 @@ const Coatches = () => {
             <h3 className='text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-b from-green-400 via-green-500 to-green-700 text-transparent bg-clip-text'>
               Have 150+
             </h3>
-            <p className='text-center text-2xl sm:text-xl md:text-2xl font-semibold text-white leading-tight pt-3 pb-8'>
+            <p className='text-center font-mono text-2xl sm:text-lg md:text-xl font-semibold text-white leading-tight pt-3 pb-8'>
               Professional Trainer and type of exercises.
             </p>
             <button>
-              <a className='px-6 border sm:px-8 py-3 uppercase rounded-full text-white hover:bg-neutral-800 transition duration-200' href="#">
+              <Link to='/about' className='px-6 border sm:px-8 py-3 uppercase rounded-full text-white hover:bg-neutral-800 transition duration-200' href="#">
                 See More
-              </a>
+              </Link>
             </button>
           </div>
 
