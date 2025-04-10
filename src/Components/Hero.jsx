@@ -11,8 +11,8 @@ const Hero = () => {
                     <h1 className='uppercase pt-24 md:pt-14 scale-y-150 md:text-[200px] text-[75px] md:-mt-5  font-extrabold text-center text-neutral-300'>FlexFlow</h1>
                 </div>
                 <div className='h-full w-full absolute z-20 flex justify-center top-24 '>
-                    <div className='absolute flex flex-col gap-5 md:left-32 left-5 bottom-10 my-10 md:bottom-32'>
-                        <p className='md:text-sm text-lg font-bold font-mono text-neutral-500 '>More Then 500 Fitness Group <br /> Classes Per Month, Find Now Friends <br /> Who Will Motivate Your Fitness Goals. </p>
+                    <div className='absolute flex flex-col gap-5 md:left-32 left-5 bottom-14 my-10 md:bottom-32'>
+                        <p className='md:text-sm text-sm font-bold font-mono text-neutral-500 '>More Then 500 Fitness Group <br /> Classes Per Month, Find Now Friends <br /> Who Will Motivate Your Fitness Goals. </p>
                         <button className='flex justify-start'>
                             <Link to="/contact" className=' uppercase px-8 font-bold text-md rounded-full py-3 bg-linear-to-r from-green-500 via-green-700 to-green-500 hover:scale-105 ease-linear duration-100 cursor-pointer ' >Free Pass</Link>
                         </button>

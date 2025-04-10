@@ -71,7 +71,7 @@ const OurPrograms = () => {
   };
 
   return (
-    <div className='min-h-96 w-full px-5 sm:px-10 md:px-32 mb-10 md:mt-24'>
+    <div className='min-h-96 w-full px-5 sm:px-10 md:px-32 mb-10 -mt-10 md:mt-38'>
       <h2 className='text-center uppercase text-[28px] sm:text-3xl md:text-5xl font-bold text-white'>
         Our <span className='text-green-500'>special</span> program.
       </h2>
