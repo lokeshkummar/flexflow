@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import './index.css'
 import App from './App.jsx'
 import Contact from './Components/Contact.jsx';
-import Blogs from './Components/Blogs.jsx';
+import BheemAI from './Components/BheemAI.jsx';
 import About from './Components/About.jsx';
 import Layout from './Components/Layout.jsx';
 import { ClerkProvider } from '@clerk/clerk-react'
@@ -23,7 +23,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/' element={<App />} >
           <Route index element={<Layout />} />
           <Route path='/about' element={<About />} />
-          <Route path='/blogs' element={<Blogs />} />
+          <Route path='/bheem-ai' element={<BheemAI />} />
           <Route path='/contact' element={<Contact />} />
 
           <Route path='/sign-in/*' element={<SignInPage />} />

@@ -1,10 +1,51 @@
 
 const Pricing = () => {
+
+  const pricingPlans = {
+    weeklyPlan:{
+      id: 1,
+      plan: "Weekly plan",
+      price: "$80",
+      facilities:[
+        "Free Consulting",
+        "3 Hour Personal Training",
+        "Exercise Program",
+        "Normal Workout"
+      ]
+    },
+    monthlyPlan:{
+      id: 2,
+      plan: "Month plan",
+      price: "$120",
+      facilities:[
+        "Free Consulting",
+        "3 Hour Personal Training",
+        "Exercise Program",
+        "Normal Workout",
+        "Highest Level Workout",
+        "Extra Care of Health"
+      ]
+    },
+    yearlyPlan:{
+      id: 3,
+      plan: "Yearly plan",
+      price: "$240",
+      facilities:[
+        "Free Consulting",
+        "15 Hours Personal Training",
+        "Highest Level Exercises",
+        "Normal Workout",
+        "Personal Coatch",
+        "Extra Care of Health"
+      ]
+    },
+}
+
   return (
     <div className='md:my-20 mt-10 md:mt-0'>
       <h3 className='uppercase pl-5 md:pl-0 md:text-center text-2xl md:text-6xl md:py-10 font-bold text-green-500'>Join <span className='text-white'>Our Membership.</span></h3>
       <div className='w-full my-10 flex justify-center items-center flex-col md:flex-row gap-10 md:gap-20'>
-        <div className='h-96 w-80 rounded-2xl bg-neutral-900 p-10 hover:scale-110 ease-in-out duration-300'>
+        <div className='h-96 w-80 rounded-2xl bg-neutral-900 p-10 hover:scale-110 ease-in-out duration-300' >
           <div className='border-b border-neutral-600 pb-3'>
             <span className='text-md text-green-500'>Weekly Plan</span>
             <h2 className='text-white text-5xl font-bold'>$80</h2>

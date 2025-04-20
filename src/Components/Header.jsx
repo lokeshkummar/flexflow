@@ -26,16 +26,19 @@ const Header = () => {
 
                     <div className="hidden md:block">
                         <nav aria-label="Global">
-                            <ul className=" flex items-center gap-10 text-sm text-semibold">
+                            <ul className=" flex items-center gap-7 text-sm text-semibold">
                                 <NavLink className={({ isActive }) => `font-bold uppercase transition hover:text-green-500 ${isActive ? "text-green-500" : "text-neutral-500"}`} to='/'>
                                     Home
                                 </NavLink>
                                 <NavLink className={({ isActive }) => `font-bold uppercase transition hover:text-green-500 ${isActive ? "text-green-500" : "text-neutral-500"}`} to='/about'>
                                     About Us
                                 </NavLink>
-                                <NavLink className={({ isActive }) => `font-bold uppercase transition hover:text-green-500 ${isActive ? "text-green-500" : "text-neutral-500"}`} to='/blogs'>
-                                    Blogs
+                                <div className="flex items-center gap-1">
+                                <NavLink className={({ isActive }) => `font-semibold italic transition hover:text-green-500 ${isActive ? "text-green-500" : "text-neutral-500"}`} to='/bheem-ai'>
+                                    Chat With <span className="font-bold uppercase text-lg "> AI</span>
                                 </NavLink>
+                                <span className="mb-5 h-1.5 w-1.5 rounded-full bg-green-500 animate-ping"></span>
+                                </div>
                                 <NavLink className={({ isActive }) => `font-bold uppercase transition hover:text-green-500 ${isActive ? "text-green-500" : "text-neutral-500"}`} to='/contact'>
                                     Contact Us
                                 </NavLink>
@@ -80,10 +83,10 @@ const Header = () => {
                             className='fixed right-0 top-0 z-50 pb-5 h-full w-full bg-[#b9b9b924] backdrop-blur-xl text-green-500 flex flex-col '>
                             <HiOutlineXCircle className='absolute right-5 mt-5 text-6xl active:scale-75 ease-linear duration-200' onClick={togglePopover} />
                             <div className='h-full uppercase w-full flex flex-col gap-7 justify-center items-center text-2xl font-bold'>
-                                <Link to='/' className="text-green-500" href="">Home</Link>
-                                <Link to='/about' className="text-green-500" href="">About Us</Link>
-                                <Link to='/blogs' className="text-green-500" href="">Blogs</Link>
-                                <Link to='/contact' className="text-green-500" href="">Contact</Link>
+                                <Link to='/' className="text-green-500" >Home</Link>
+                                <Link to='/about' className="text-green-500" >About Us</Link>
+                                <Link to='/bheem-ai' className="text-green-500" >Chat with AI</Link>
+                                <Link to='/contact' className="text-green-500" >Contact</Link>
                             </div>
                         </motion.div>
                     )
