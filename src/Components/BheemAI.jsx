@@ -15,7 +15,7 @@ const Blogs = () => {
   }
 
   const handleKeyPress = (e) => {
-    if (e.key ==='Enter' && !loading) {
+    if (e.key === 'Enter' && !loading) {
       AIoutput();
     }
   }
@@ -55,7 +55,13 @@ const Blogs = () => {
             <UserRound className=' p-2 bg-[#d0d0d035] backdrop-blur-2xl size-8 rounded-full' />
           </div>
           {
-            loading ? (<p>Thinking...</p>) : (<div className='flex gap-2'>
+            loading ? (<div className='flex gap-2'>
+              <Bot className='p-2 bg-[#51515135] backdrop-blur-2xl size-10 rounded-full' />
+              <div className='max-w-[85%] md:max-w-[50%] bg-[#51515135] backdrop-blur-2xl rounded-tl-none rounded-2xl p-5 '>
+                <p>Thinking...</p>
+              </div>
+            </div>
+            ) : (<div className='flex gap-2'>
               <Bot className='p-2 bg-[#51515135] backdrop-blur-2xl size-10 rounded-full' />
               <div className='max-w-[85%] md:max-w-[50%] bg-[#51515135] backdrop-blur-2xl rounded-tl-none rounded-2xl p-5 '>
                 <Markdown>

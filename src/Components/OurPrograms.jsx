@@ -87,7 +87,7 @@ const OurPrograms = () => {
           >
             {key}
             <span
-              className={`h-0.5 mt-1 w-14 mx-auto ${
+              className={`h-0.5 mt-1 w-5 mx-auto ${
                 activeKey === programKeys[key] ? "bg-green-500" : ""
               }`}
             ></span>
