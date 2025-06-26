@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 import Markdown from 'react-markdown'
 import axios from "axios"
 import { Bot, UserRound } from 'lucide-react';
-
-const Blogs = () => {
-
+const BheemAI = () => {
   const [prompt, setPrompt] = useState('')
   const [output, setOutput] = useState('')
   const [loading, setLoading] = useState(false)
   const [displayText, setDisplayText] = useState('')
+
 
   const handleChange = (e) => {
     setPrompt(e.target.value)
@@ -19,11 +18,9 @@ const Blogs = () => {
       AIoutput();
     }
   }
-
   const url = import.meta.env.VITE_BASE_URL
   if (!url) {
     console.log("base url not found!");
-
   }
   const AIoutput = async () => {
     setDisplayText(prompt)
@@ -44,7 +41,6 @@ const Blogs = () => {
       setLoading(false)
     }
   }
-
   return (
     <div className='relative h-screen mb-10 w-full flex justify-center items-center text-white font-extrabold text-4xl'>
       <div className='h-full w-full '>
@@ -90,5 +86,4 @@ const Blogs = () => {
     </div>
   )
 }
-
-export default Blogs
+export default BheemAI

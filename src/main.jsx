@@ -9,6 +9,7 @@ import Layout from './Components/Layout.jsx';
 import { ClerkProvider } from '@clerk/clerk-react'
 import SignInPage from './Components/SignInPage.jsx';
 import SignUpPage from './Components/SignUpPage.jsx';
+import ProtectedRoute from './Components/ProtectedRoute.jsx'
 
 const Clerk_Api = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
@@ -23,8 +24,11 @@ createRoot(document.getElementById('root')).render(
         <Route path='/' element={<App />} >
           <Route index element={<Layout />} />
           <Route path='/about' element={<About />} />
-          <Route path='/bheem-ai' element={<BheemAI />} />
           <Route path='/contact' element={<Contact />} />
+
+          <Route element={<ProtectedRoute />}>
+            <Route path='/bheem-ai' element={<BheemAI />} />
+          </Route>
 
           <Route path='/sign-in/*' element={<SignInPage />} />
           <Route path='/sign-up/*' element={<SignUpPage />} />

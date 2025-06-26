@@ -57,7 +57,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen px-2 pt-32 pb-10 bg-gradient-to-bl from-green-400 to-black flex items-center justify-center">
-      <div className="bg-[#9e9e9e49] backdrop-blur-xl text-white rounded-2xl border-2 border-neutral-400 shadow-2xl w-full sm:max-w-4xl font-mono p-6">
+      <div className="bg-[#51515135] backdrop-blur-2xl text-white rounded-2xl border-2 border-neutral-500 shadow-2xl w-full sm:max-w-4xl font-mono p-6">
         <div className="text-green-400 py-2 flex items-center gap-3">
           <div className="flex gap-1 items-center">
             <span className="h-4 w-4 rounded-full bg-red-500"></span>

@@ -5,7 +5,7 @@ const OurPrograms = () => {
     boxjumping: {
       title: "Box Jumping",
       description:
-        "Box jumping is a powerful plyometric exercise that boosts leg strength, agility, and explosive power. It’s perfect for improving athletic performance and building lower-body endurance.",
+        "Box jumping is a powerful plyometric exercise that boosts leg strength, agility, and explosive power. It's perfect for improving athletic performance and building lower-body endurance.",
       images: [
         "https://images.pexels.com/photos/19254710/pexels-photo-19254710/free-photo-of-a-man-exercising-at-the-gym.jpeg?auto=compress&cs=tinysrgb&w=600",
         "https://images.pexels.com/photos/7675414/pexels-photo-7675414.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -14,7 +14,7 @@ const OurPrograms = () => {
     cardio: {
       title: "Cardio",
       description:
-        "Cardio workouts elevate your heart rate, burn fat, and improve stamina. Whether you’re running, cycling, or dancing, cardio gets your blood pumping and boosts overall health.",
+        "Cardio workouts elevate your heart rate, burn fat, and improve stamina. Whether you're running, cycling, or dancing, cardio gets your blood pumping and boosts overall health.",
       images: [
         "https://images.pexels.com/photos/4662354/pexels-photo-4662354.jpeg?auto=compress&cs=tinysrgb&w=600",
         "https://images.pexels.com/photos/11175793/pexels-photo-11175793.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -64,7 +64,7 @@ const OurPrograms = () => {
 
   const programKeys = {
     "Signature class": "signatureclass",
-    Cardio: "cardio",
+    Cardio: "cardio", 
     Cycling: "cycling",
     "Mind And Body": "mindandbody",
     "Box Jumping": "boxjumping",
@@ -76,24 +76,35 @@ const OurPrograms = () => {
         Our <span className='text-green-500'>special</span> program.
       </h2>
 
-      <ul className='flex flex-wrap justify-center gap-5 sm:gap-10 md:gap-24 items-center text-neutral-500 py-5 text-xs sm:text-sm font-bold uppercase overflow-auto'>
-        {Object.keys(programKeys).map((key) => (
-          <li
-            key={key}
-            onClick={() => handleTabClick(programKeys[key])}
-            className={`cursor-pointer flex flex-col justify-between hover:text-green-500 ${
-              activeKey === programKeys[key] ? "text-green-500" : "text-white"
-            }`}
-          >
-            {key}
-            <span
-              className={`h-0.5 mt-1 w-5 mx-auto ${
-                activeKey === programKeys[key] ? "bg-green-500" : ""
+      {/* Menu navigation with hidden scrollbar */}
+      <div className='w-full overflow-x-auto py-5 scrollbar-hide' style={{ 
+        scrollbarWidth: 'none',
+        msOverflowStyle: 'none',
+      }}>
+        <style jsx>{`
+          .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+          }
+        `}</style>
+        <ul className='flex min-w-max justify-center gap-5 sm:gap-10 md:gap-24 px-2 items-center text-neutral-500 text-xs sm:text-sm font-bold uppercase'>
+          {Object.keys(programKeys).map((key) => (
+            <li
+              key={key}
+              onClick={() => handleTabClick(programKeys[key])}
+              className={`cursor-pointer px-2 py-1 flex flex-col justify-between hover:text-green-500 ${
+                activeKey === programKeys[key] ? "text-green-500" : "text-white"
               }`}
-            ></span>
-          </li>
-        ))}
-      </ul>
+            >
+              {key}
+              <span
+                className={`h-0.5 mt-1 w-5 mx-auto ${
+                  activeKey === programKeys[key] ? "bg-green-500" : ""
+                }`}
+              ></span>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <div className='h-auto w-full'>
         <div className='flex flex-col md:flex-row gap-5 mt-5'>
@@ -125,7 +136,7 @@ const OurPrograms = () => {
             <h2 className='text-2xl sm:text-3xl uppercase font-bold'>
               {current.title}
             </h2>
-            <p className='text-md text-neutral-400 font-semibold font-mono '>
+            <p className='text-md text-neutral-400 font-semibold font-mono'>
               {current.description}
             </p>
 
